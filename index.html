@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu de Pizzaria</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Pizzaria Feroldi</h1>
+    </header>
+    <div id="menu">
+        <div class="pizza">
+            <img src="https://anamariabraga.globo.com/wp-content/uploads/2016/07/pizza-de-4-queijos.jpg" alt="Pizza 4 queijos">
+            <h2>Pizza 4 queijos</h2>
+            <p>queijo provolone
+ queijo gorgonzola
+ muçarela ralado
+ parmesão ralado.</p>
+            <p class="price">R$ 35,00</p>
+            <button onclick="addToCart('Pizza 4 queijos´, 35,00)">Adicionar ao Carrinho</button>
+        </div>
+         <div class="pizza">
+            <img src="https://cdn0.tudoreceitas.com/pt/posts/9/8/3/pizza_calabresa_e_mussarela_4389_600.jpg" alt="Pizza calabreza">
+            <h2>Pizza calabreza</h2>
+            <p>calabreza e queijo.</p>
+            <p class="price">R$ 35,00</p>
+            <button onclick="addToCart('Pizza calabresa', 35.00)">Adicionar ao Carrinho</button>
+    </div>
+    <div class="pizza">
+            <img src="https://www.sabornamesa.com.br/media/k2/items/cache/a7c7e20ef55b9c6f68541bcec8a4cfb6_XL.jpg" alt="Pizza itliana">
+            <h2>Pizza Italiana</h2>
+            <p>mussarela,parmesao, salame italiano e tomates.</p>
+            <p class="price">R$ 40,00</p>
+            <button onclick="addToCart('Pizza italiana', 40.00)">Adicionar ao Carrinho</button>
+        </div>
+    <div class="pizza">
+            <img src="https://s3-sa-east-1.amazonaws.com/loja2/97d159412f1b1d9d6de15a9aeedda1db.jpg" alt="Pizza portuguesa">
+            <h2>Pizza Portuguesa</h2>
+            <p>molho de tomate,azeitona verde,cebola,presunto,ovo cosido,queijo .</p>
+            <p class="price">R$ 40,00</p>
+            <button onclick="addToCart('Pizza portuguesa', 40.00)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="pizza">
+            <img src="https://anamariabraga.globo.com/wp-content/uploads/2018/12/pizza-de-chocolate-com-morango-1024x576.jpg" alt="Pizza sensaçao">
+            <h2>Pizza sensação</h2>
+            <p>Mussarela, chocolate, morango, leite condensado..</p>
+            <p class="price">R$ 35,00</p>
+            <button onclick="addToCart('Pizza sensação', 35.00)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="pizza">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLeNEJqTb316kJTuBHV3JFUKzC9UAMNJx-GA&usqp=CAU" alt="Pizza strogonoff">
+            <h2>Pizza strogonoff</h2>
+            <p>strogonoff,batata palha.</p>
+            <p class="price">R$ 40,00</p>
+            <button onclick="addToCart('Pizza strogonoff', 40.00)">Adicionar ao Carrinho</button>
+        </div>
+    <div id="cart">
+        <h2>Carrinho de Compras</h2>
+        <ul id="cart-items">
+            <!-- Itens do carrinho serão adicionados aqui -->
+        </ul>
+        <p>Total: R$ <span id="cart-total">0.00</span></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
